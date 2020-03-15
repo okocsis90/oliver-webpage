@@ -9,7 +9,7 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
 }
 
-.bg {
+.bg-main {
   /* The image used */
   background-image: url("../static/bg-masthead.jpg");
 
@@ -23,6 +23,19 @@ body, html {
 }
 
 .bg-black {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.nav-link-white {
+  color: white !important;
+}
+
+.nav-link-white:hover .nav-link-white:focus {
+  border: white;
+  border-radius: 1px;
+}
+
+.bg-glass {
   opacity: 30%;
   background-color: black;
 
@@ -47,18 +60,58 @@ body, html {
 .title-border {
   background-color: #111;
   color: #fff;
-  padding: 18px;
   letter-spacing: 7px;
 }
 
 .big {
   font-size: 30px;
+  padding: 18px;
 }
 
 .small {
+  padding: 14px;
   font-size: 18px;
 }
 
 section {
-  padding: 150px 0;
+  padding: 100px;
+  /* Full height */
+  height: 100%;
+  text-align: justify;
+}
+
+#bio {
+  height: fit-content;
+}
+
+.album-container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.album-container:hover .image {
+  opacity: 0.3;
+}
+
+.album-container:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
 }
