@@ -3,8 +3,60 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
-header {
-  padding: 156px 0 100px;
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../static/bg-masthead.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-black {
+  opacity: 30%;
+  background-color: black;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.title-border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  letter-spacing: 7px;
+}
+
+.big {
+  font-size: 30px;
+}
+
+.small {
+  font-size: 18px;
 }
 
 section {
