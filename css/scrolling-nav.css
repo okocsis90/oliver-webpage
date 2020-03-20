@@ -84,34 +84,29 @@ section {
   height: fit-content;
 }
 
-.album-container {
-  position: relative;
-  width: 50%;
+.polaroid {
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform .2s;
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+.polaroid:hover {
+  transform: scale(1.1);
+  transition: .5s ease-in-out;
 }
 
-.album-container:hover .image {
-  opacity: 0.3;
+.album-text-container {
+  text-align: left;
+  padding: 10px 20px;
 }
 
-.album-container:hover .middle {
-  opacity: 1;
+.spotify {
+  color: #1DB954 !important;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+.spotify:hover {
+  color: #189945 !important;
 }
