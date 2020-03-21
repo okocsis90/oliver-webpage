@@ -6,17 +6,12 @@
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 15px/1.8 "Lato", Arial;
 }
 
 .bg-main {
-  /* The image used */
   background-image: url("../static/bg-masthead.jpg");
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,11 +33,7 @@ body, html {
 .bg-glass {
   opacity: 30%;
   background-color: black;
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,17 +66,14 @@ body, html {
 
 section {
   padding: 100px;
-  /* Full height */
-  height: 100%;
-  text-align: justify;
-}
-
-#bio {
   height: fit-content;
+  min-height: 50%;
+  text-align: justify;
 }
 
 .polaroid {
   width: 30%;
+  height: 90%;
   float: left;
   margin-right: 3%;
   background-color: white;
@@ -103,10 +91,39 @@ section {
   padding: 10px 20px;
 }
 
-.spotify {
-  color: #1DB954 !important;
+a, a:hover, a:active {
+  text-decoration: none
 }
 
-.spotify:hover {
-  color: #189945 !important;
+.social-link {
+  margin-right: 2%;
+  color: #737373 !important;
+}
+
+.social-link:hover {
+  color: #262626 !important;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.link-container {
+  text-align: center;
+  font-size: medium;
+}
+
+/* Mobile only */
+
+@media screen and (max-width: 600px) {
+  .polaroid {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+  }
+
+  .polaroid:hover {
+    transform: none;
+    transition: none;
+  }
 }
